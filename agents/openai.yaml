@@ -1,0 +1,7 @@
+interface:
+  display_name: "gif制作视频"
+  short_description: "按 Higgsfield 结构化规则生成 1:1 横移延展产品视频提示词"
+  default_prompt: "使用 $gifzhizuoshipin 调用 $higgsfield-seedance-prompt，根据场景图、白底产品图和镜头移动方向直接返回可复制提示词及简短说明，不生成文件。"
+
+policy:
+  allow_implicit_invocation: true
