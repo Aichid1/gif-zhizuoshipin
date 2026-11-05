@@ -125,8 +125,11 @@ The endpoint is always Image 2.
 
 - One standalone English prompt.
 - One `text` code block.
-- After the code block, add a concise Chinese summary of the reference roles, scene extension, camera path, end-frame hold and product locks.
+- A second `text` code block containing a paragraph-by-paragraph Chinese translation of the English prompt.
+- Keep the same block headings, order, values, camera direction, duration, framing and locks in both versions.
+- In the Chinese translation, write `Image 1` and `Image 2` as “图片1” and “图片2”; keep the English block headings unchanged.
+- After the two code blocks, add a concise Chinese summary of the reference roles, scene extension, camera path, end-frame hold and product locks.
 - Return the prompt and summary directly in chat. Create no Markdown, JSON, TXT or other output files.
-- Use `Image 1` and `Image 2`; never use `@`.
+- Use `Image 1` and `Image 2` in the English version, then “图片1” and “图片2” in the Chinese version; never use `@`.
 - Preserve the controlling skill's block order and positive phrasing.
 - Include `1:1`, the chosen duration and the final one-second hold.
